@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Shereen Hasan</h1>
+    <h2>1001437130</h2>
+    <h2>1.00 pm batch</h2>
+    <meta charset="UTF-8">
+    <img src={{ url_for('static',filename ='c.jpg')}} width=200 height=200>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<br>
+<table border="1">
+    <tr>
+        <th>major</th>
+        <th>course #</th>
+        <th>section</th>
+        <th>title</th>
+        <th>instructor</th>
+        <th>days</th>
+        <th>start time</th>
+        <th>end time</th>
+        <th>Max</th>
+        <th>enrolled</th>
+    </tr>
+    {% for i in display  %}
+    <tr>
+    {% for j in i  %}
+        <td>{{ j }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+time is {{ diplay -1 }}
+
+
+</body>
+</html>
